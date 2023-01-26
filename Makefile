@@ -97,5 +97,4 @@ help: ## Show this help. Example: make help
 
 
 # Mark all the commands that don't have a target
-.PHONY: help \
-        deploy
+.PHONY: help deploy_prod deploy_dev
