@@ -1,5 +1,3 @@
-# datasette.biglocalnews.org
-
 A [Datasette](https://datasette.io/) instance that allows users to explore public and private files hosted by [biglocalnews.org](https://biglocalnews.org)
 
 * Production: [datasette.biglocalnews.org](https://datasette.biglocalnews.org)
