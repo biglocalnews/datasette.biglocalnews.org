@@ -66,12 +66,23 @@ PYTHON := python -W ignore -m
 # Commands
 #
 
-deploy: ## Deploy to fly.io
-	$(call banner,  🚢 Deploying the site 🚢)
+deploy_prod: ## Deploy to datasette.biglocalnews.org
+	$(call banner,  🚢 Deploying prod site 🚢)
 	datasette publish fly --app="datasette-biglocalnews-org" \
-		-m metadata.yml \
+		-m prod.yml \
 		--create-volume 1 \
 		--create-db biglocalnews \
+		--install https://github.com/simonw/datasette-big-local/archive/refs/heads/main.zip \
+		--install datasette-cluster-map \
+		--install datasette-vega \
+		--install datasette-copyable
+
+deploy_dev: ## Deploy to dev-datasette.biglocalnews.org
+	$(call banner,  🚢 Deploying dev site 🚢)
+	datasette publish fly --app="dev-datasette-biglocalnews-org" \
+		-m dev.yml \
+		--create-volume 1 \
+		--create-db dev-biglocalnews \
 		--install https://github.com/simonw/datasette-big-local/archive/refs/heads/main.zip \
 		--install datasette-cluster-map \
 		--install datasette-vega \
