@@ -3,5 +3,5 @@ title: datasette.biglocalnews.org
 plugins:
   datasette-big-local:
     root_dir: /data/
-    graphql_url: https://dev-api.biglocalnews.org/graphql
+    graphql_url: https://api.biglocalnews.org/graphql
     csv_size_limit_mb: 100
