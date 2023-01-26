@@ -2,6 +2,7 @@ A [Datasette](https://datasette.io/) instance that allows users to explore publi
 
 * Production: [datasette.biglocalnews.org](https://datasette.biglocalnews.org)
 * Development: [dev-datasette.biglocalnews.org](https://dev-datasette.biglocalnews.org)
+* Plugin: [simonw/datasette-big-local](https://github.com/simonw/datasette-big-local)
 
 ## Deployment
 
