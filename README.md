@@ -12,7 +12,7 @@ Install the dependencies.
 pipenv install
 ```
 
-Login to Fly.io. Our credentials are available in our password manager.
+Login to Fly.io. Our credentials are available in our password manager. Click [here](https://fly.io/docs/hands-on/install-flyctl/) for instructions on installing flyctl, the command line client for Fly.io.
 
 ```bash
 flyctl auth login
