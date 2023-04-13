@@ -72,6 +72,7 @@ deploy_prod: ## Deploy to datasette.biglocalnews.org
 		-m prod.yml \
 		--create-volume 1 \
 		--create-db biglocalnews \
+		--branch 'schema-version-fix-0.64.x' \
 		--install https://github.com/simonw/datasette-big-local/archive/refs/heads/main.zip \
 		--install datasette-cluster-map \
 		--install datasette-vega \
@@ -83,6 +84,7 @@ deploy_dev: ## Deploy to dev-datasette.biglocalnews.org
 		-m dev.yml \
 		--create-volume 1 \
 		--create-db dev-biglocalnews \
+		--branch 'schema-version-fix-0.64.x' \
 		--install https://github.com/simonw/datasette-big-local/archive/refs/heads/main.zip \
 		--install datasette-cluster-map \
 		--install datasette-vega \
